@@ -1,0 +1,84 @@
+/*-| Fonts |-*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*-| Reset |-*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*-| Body |-*/
+main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254,100,100);
+    background: linear-gradient(0deg, rgba(254,100,100,1) 0%, rgba(248,189,39,1) 100%); 
+}
+section{
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+div > p{
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    pointer-events: none;
+}
+div#apresentacao > p{
+    font-size: 30pt;
+    font-weight: bold;
+}
+div#midia{
+    margin: 40px 0 0 0;
+}
+div#midia > p{
+    font-size: 12pt;
+}
+div#midia > div.redes-sociais{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+div#midia > div.redes-sociais > a{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: all .2s ease-in-out;
+}
+div#midia > div.redes-sociais > a:nth-child(1){
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+div#midia > div.redes-sociais > a:nth-child(2){
+    background: linear-gradient(45deg, #c4302b, #ee211a);
+}
+div#midia > div.redes-sociais > a:nth-child(3){
+    background: linear-gradient(45deg, #3b5998, #2b4170);
+}
+div#midia > div.redes-sociais > a:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+div#midia > div.redes-sociais > a > i{
+    color: #fff;
+    font-size: 15pt;
+}
